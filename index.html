@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proper Piano UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="piano.js" defer></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-900 flex flex-col items-center justify-center min-h-screen">
+
+    <div class="mb-10 text-center">
+        <h1 class="text-4xl font-extrabold text-white mb-2 tracking-tight"> Let's Enjoy Piano</h1>
+    </div>
+
+    <!-- Piano Container -->
+    <div class="bg-slate-800 p-6 rounded-3xl shadow-2xl border-t-8 border-slate-950 overflow-x-auto max-w-full">
+
+        <!-- Keyboard Flex Container -->
+        <div class="flex select-none shadow-xl border-4 border-slate-950 rounded-b-lg">
+
+            <!-- ==== OCTAVE 3 ==== -->
+            <!-- C3 -->
+            <div class="relative">
+                <button onclick="playAudio('C3.mp3.mpeg')"
+                    class="piano-key white-key block w-14 h-64 bg-white border border-slate-300 border-t-0 rounded-b hover:bg-slate-100 active:bg-slate-200 active:scale-y-[0.99] origin-top transition-colors"></button>
+                <button onclick="playAudio('Db3.mp3.mpeg')"
+                    class="piano-key black-key absolute top-0 -right-4 w-8 h-40 bg-slate-900 border border-black rounded-b z-10 shadow-md hover:bg-slate-700 active:bg-black active:scale-y-[0.98] origin-top transition-colors"></button>
+            </div>
+
+            <!-- D3 -->
+            <div class="relative">
+                <button onclick="playAudio('D3.mp3.mpeg')"
+                    class="piano-key white-key block w-14 h-64 bg-white border border-slate-300 border-t-0 rounded-b hover:bg-slate-100 active:bg-slate-200 active:scale-y-[0.99] origin-top transition-colors"></button>
+                <button onclick="playAudio('Eb3.mp3.mpeg')"
+                    class="piano-key black-key absolute top-0 -right-4 w-8 h-40 bg-slate-900 border border-black rounded-b z-10 shadow-md hover:bg-slate-700 active:bg-black active:scale-y-[0.98] origin-top transition-colors"></button>
+            </div>
+
+            <!-- E3 -->
+            <div class="relative">
+                <button onclick="playAudio('E3.mp3.mpeg')"
+                    class="piano-key white-key block w-14 h-64 bg-white border border-slate-300 border-t-0 rounded-b hover:bg-slate-100 active:bg-slate-200 active:scale-y-[0.99] origin-top transition-colors"></button>
+            </div>
+
+            <!-- F3 -->
+            <div class="relative">
+                <button onclick="playAudio('F3.mp3.mpeg')"
+                    class="piano-key white-key block w-14 h-64 bg-white border border-slate-300 border-t-0 rounded-b hover:bg-slate-100 active:bg-slate-200 active:scale-y-[0.99] origin-top transition-colors"></button>
+                <button onclick="playAudio('Gb3.mp3.mpeg')"
+                    class="piano-key black-key absolute top-0 -right-4 w-8 h-40 bg-slate-900 border border-black rounded-b z-10 shadow-md hover:bg-slate-700 active:bg-black active:scale-y-[0.98] origin-top transition-colors"></button>
+            </div>
+
+            <!-- G3 -->
+            <div class="relative">
+                <button onclick="playAudio('G3.mp3.mpeg')"
+                    class="piano-key white-key block w-14 h-64 bg-white border border-slate-300 border-t-0 rounded-b hover:bg-slate-100 active:bg-slate-200 active:scale-y-[0.99] origin-top transition-colors"></button>
+                <button onclick="playAudio('Ab3.mp3.mpeg')"
+                    class="piano-key black-key absolute top-0 -right-4 w-8 h-40 bg-slate-900 border border-black rounded-b z-10 shadow-md hover:bg-slate-700 active:bg-black active:scale-y-[0.98] origin-top transition-colors"></button>
+            </div>
+
+            <!-- A3 -->
+            <div class="relative">
+                <button onclick="playAudio('A3.mp3.mpeg')"
+                    class="piano-key white-key block w-14 h-64 bg-white border border-slate-300 border-t-0 rounded-b hover:bg-slate-100 active:bg-slate-200 active:scale-y-[0.99] origin-top transition-colors"></button>
+                <button onclick="playAudio('Bb3.mp3.mpeg')"
+                    class="piano-key black-key absolute top-0 -right-4 w-8 h-40 bg-slate-900 border border-black rounded-b z-10 shadow-md hover:bg-slate-700 active:bg-black active:scale-y-[0.98] origin-top transition-colors"></button>
+            </div>
+
+            <!-- B3 -->
+            <div class="relative">
+                <button onclick="playAudio('B3.mp3.mpeg')"
+                    class="piano-key white-key block w-14 h-64 bg-white border border-slate-300 border-t-0 rounded-b hover:bg-slate-100 active:bg-slate-200 active:scale-y-[0.99] origin-top transition-colors"></button>
+            </div>
+
+
+            <!-- ==== OCTAVE 4 ==== -->
+            <!-- C4 -->
+            <div class="relative">
+                <button onclick="playAudio('C4.mp3.mpeg')"
+                    class="piano-key white-key block w-14 h-64 bg-white border border-slate-300 border-t-0 rounded-b hover:bg-slate-100 active:bg-slate-200 active:scale-y-[0.99] origin-top transition-colors"></button>
+                <button onclick="playAudio('Db4.mp3.mpeg')"
+                    class="piano-key black-key absolute top-0 -right-4 w-8 h-40 bg-slate-900 border border-black rounded-b z-10 shadow-md hover:bg-slate-700 active:bg-black active:scale-y-[0.98] origin-top transition-colors"></button>
+            </div>
+
+            <!-- D4 -->
+            <div class="relative">
+                <button onclick="playAudio('D4.mp3.mpeg')"
+                    class="piano-key white-key block w-14 h-64 bg-white border border-slate-300 border-t-0 rounded-b hover:bg-slate-100 active:bg-slate-200 active:scale-y-[0.99] origin-top transition-colors"></button>
+                <button onclick="playAudio('Eb4.mp3.mpeg')"
+                    class="piano-key black-key absolute top-0 -right-4 w-8 h-40 bg-slate-900 border border-black rounded-b z-10 shadow-md hover:bg-slate-700 active:bg-black active:scale-y-[0.98] origin-top transition-colors"></button>
+            </div>
+
+            <!-- E4 -->
+            <div class="relative">
+                <button onclick="playAudio('E4.mp3.mpeg')"
+                    class="piano-key white-key block w-14 h-64 bg-white border border-slate-300 border-t-0 rounded-b hover:bg-slate-100 active:bg-slate-200 active:scale-y-[0.99] origin-top transition-colors"></button>
+            </div>
+
+            <!-- F4 -->
+            <div class="relative">
+                <button onclick="playAudio('F4.mp3.mpeg')"
+                    class="piano-key white-key block w-14 h-64 bg-white border border-slate-300 border-t-0 rounded-b hover:bg-slate-100 active:bg-slate-200 active:scale-y-[0.99] origin-top transition-colors"></button>
+                <button onclick="playAudio('Gb4.mp3.mpeg')"
+                    class="piano-key black-key absolute top-0 -right-4 w-8 h-40 bg-slate-900 border border-black rounded-b z-10 shadow-md hover:bg-slate-700 active:bg-black active:scale-y-[0.98] origin-top transition-colors"></button>
+            </div>
+
+            <!-- G4 -->
+            <div class="relative">
+                <button onclick="playAudio('G4.mp3.mpeg')"
+                    class="piano-key white-key block w-14 h-64 bg-white border border-slate-300 border-t-0 rounded-b hover:bg-slate-100 active:bg-slate-200 active:scale-y-[0.99] origin-top transition-colors"></button>
+                <button onclick="playAudio('Ab4.mp3.mpeg')"
+                    class="piano-key black-key absolute top-0 -right-4 w-8 h-40 bg-slate-900 border border-black rounded-b z-10 shadow-md hover:bg-slate-700 active:bg-black active:scale-y-[0.98] origin-top transition-colors"></button>
+            </div>
+
+            <!-- A4 -->
+            <div class="relative">
+                <button onclick="playAudio('A4.mp3.mpeg')"
+                    class="piano-key white-key block w-14 h-64 bg-white border border-slate-300 border-t-0 rounded-b hover:bg-slate-100 active:bg-slate-200 active:scale-y-[0.99] origin-top transition-colors"></button>
+                <button onclick="playAudio('Bb4.mp3.mpeg')"
+                    class="piano-key black-key absolute top-0 -right-4 w-8 h-40 bg-slate-900 border border-black rounded-b z-10 shadow-md hover:bg-slate-700 active:bg-black active:scale-y-[0.98] origin-top transition-colors"></button>
+            </div>
+
+            <!-- B4 -->
+            <div class="relative">
+                <button onclick="playAudio('B4.mp3.mpeg')"
+                    class="piano-key white-key block w-14 h-64 bg-white border border-slate-300 border-t-0 rounded-b hover:bg-slate-100 active:bg-slate-200 active:scale-y-[0.99] origin-top transition-colors"></button>
+            </div>
+
+            <!-- ==== END KEY (C5) ==== -->
+            <div class="relative">
+                <button onclick="playAudio('C5.mp3.mpeg')"
+                    class="piano-key white-key block w-14 h-64 bg-white border border-slate-300 border-t-0 rounded-b hover:bg-slate-100 active:bg-slate-200 active:scale-y-[0.99] origin-top transition-colors"></button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
